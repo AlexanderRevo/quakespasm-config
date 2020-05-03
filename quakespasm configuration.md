@@ -124,5 +124,3 @@ There seems to be no dz support in Quakespasm, so you'll have to extract it usin
 Main page: http://speeddemosarchive.com/dzip/download.html
 macOS: TODO2 (the version from the link above probably won't work on Catalina)
 Alternate linux instructions: https://linuxg.net/install-dzip-on-ubuntu/
-
-
