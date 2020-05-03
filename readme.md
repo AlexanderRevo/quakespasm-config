@@ -16,7 +16,7 @@ Replace "C:\Games\Quake" with the path to the folder where you have Quake instal
 
 ![windows-shortcut-properties](screenshots/windows/shortcut-properties.png)
 
-The full text does fit into the window on the screenshot, full value should look something like this:
+The full text doesn't fit into the window on the screenshot, full value should look something like this:
 
 ```C:\Games\Quakespasm\quakespasm-0.93.2_win64\quakespasm.exe -basedir "C:\Games\Quake" -fitz```
 
@@ -156,5 +156,5 @@ There seems to be no dz support in Quakespasm, so you'll have to extract it usin
 
 #### Downloads
 
-Main page: http://speeddemosarchive.com/dzip/download.html
-Alternate linux instructions: https://linuxg.net/install-dzip-on-ubuntu/
+* Main page: http://speeddemosarchive.com/dzip/download.html
+* Alternate linux instructions: https://linuxg.net/install-dzip-on-ubuntu/
