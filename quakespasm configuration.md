@@ -6,6 +6,7 @@
 2. Download Quakespasm from http://quakespasm.sourceforge.net/download.htm.
 3. Extract Quakespasm archive into a convenient location (mine is in `C:\Games\Quakespasm`).
 4. Create a shortcut to `quakespasm.exe` on your desktop.
+![windows-shortcut-properties](screenshots/windows/shortcut-properties.png)
 5. Right click the shortcut, open properties, and on the `Shortcut` tab add the following after `quakespasm.exe`:
 * Quake (base game with no expansions): `-basedir "C:\Games\Quake" -fitz`.
 * Scourge of Armagon: `-basedir "C:\Games\Quake" -fitz -hipnotic`.
@@ -55,6 +56,9 @@ vid_width "1920"
 Replace `vid_height` and `vid_width` with your screen resolution values if necessary.
 
 This will give you normal modern FPS controls with mouselook and crosshair. You can also toggle between pixelated and filtered textures by pressing "O" (the letter, not the zero digit) on your keyboard.
+
+![beautiful-pixels](screenshots/filtering-beautiful-pixels.png)
+![vomit-inducing-blurry-mess](screenshots/filtering-vomit-inducing-blurry-mess.png)
 
 ##Command line
 
