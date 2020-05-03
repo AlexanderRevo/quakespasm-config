@@ -52,33 +52,17 @@ vid_height "1080"
 vid_width "1920"
 ```
 
-TODO1: how's `host_maxfps` different from `vid_refreshrate` and do both need to be set?
-
 Replace `vid_height` and `vid_width` with your screen resolution values if necessary.
 
 This will give you normal modern FPS controls with mouselook and crosshair. You can also toggle between pixelated and filtered textures by pressing "O" (the letter, not the zero digit) on your keyboard.
 
-###GOG
-
-TODO1
-
-###Steam
-
-TODO1
-
-###Retail
-
-TODO2
-
 ##Command line
 
-NOTE: You can run Quakespasm from any directory (confirmed on Windows, TODO0: test macOS and linux), but it will create a `history.txt` file in that directory, which will contain the history of the console commands you entered while playing, if any (TODO0 test mac and linux).
+NOTE: You can run Quakespasm from any directory, but it will create a `history.txt` file in that directory, which will contain the history of the console commands you entered while playing, if any.
 
 - Quake: `quakespasm -basedir <quake directory> -fitz`.
 - Scourge of Armagon: `quakespasm -basedir <quake directory> -fitz -hipnotic`.
 - Dissolution of Eternity: `quakespasm -basedir <quake directory> -fitz -rogue`.
-- Malice: TODO1.
-- Shrak: TODO1.
 - Dimension of the Past: `quakespasm -basedir <quake directory> -fitz -game dopa`.
 
 Use `-basedir` to specify where the directory with Quake data files is.
@@ -147,14 +131,6 @@ Bind filtering mode toggle to a key (add to your config):
 
 Source: https://www.quaddicted.com/webarchive/www.quaddicted.com/software-vs-glquake/software-vs-glquake-texture-filtering/
 
-###Borderless window
-
-Quakespasm supports `vid_borderless "1"` in config, but it doesn't seem to do anything (TODO1: Maybe try different fullscreen modes?).
-
-##Multiplayer
-
-TODO3
-
 ##Playing demos
 
 Put the demo files into `id1` (or respective directory with `pak0.pak`), then
@@ -167,12 +143,9 @@ For example, to play a demo of Scourge of Armagon, run this:
 
 ###dzip
 
-TODO2: what's dzip and why care?
-
 There seems to be no dz support in Quakespasm, so you'll have to extract it using dzip before playing.
 
 ####Downloads
 
 Main page: http://speeddemosarchive.com/dzip/download.html
-macOS: TODO2 (the version from the link above probably won't work on Catalina)
 Alternate linux instructions: https://linuxg.net/install-dzip-on-ubuntu/
