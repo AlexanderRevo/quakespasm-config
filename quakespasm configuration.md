@@ -1,22 +1,74 @@
 #Quakespasm configuration
 
-##Download
+##TL;DR
 
-http://quakespasm.sourceforge.net/download.htm
+1. Install your game from GOG/Steam/original CD.
+2. Download Quakespasm from http://quakespasm.sourceforge.net/download.htm.
+3. Extract Quakespasm archive into a convenient location (mine is in `C:\Games\Quakespasm`).
+4. Create a shortcut to `quakespasm.exe` on your desktop.
+5. Right click the shortcut, open properties, and on the `Shortcut` tab add the following after `quakespasm.exe`:
+* Quake (base game with no expansions): `-basedir "C:\Games\Quake" -fitz`.
+* Scourge of Armagon: `-basedir "C:\Games\Quake" -fitz -hipnotic`.
+* Dissolution of Eternity: `-basedir "C:\Games\Quake" -fitz -rogue`.
+* Dimension of the Past (DOPA): `-basedir "C:\Games\Quake" -fitz -game dopa`.
 
-##Installation
+Replace "C:\Games\Quake" with the path to the folder where you have Quake installed.
+
+6. Go to `id1` subfolder in your Quake directory, and add the following lines to your `autoexec.cfg` (create that file if it doesn't exist):
+
+```
++mlook
+alias +movejump "+jump;+moveup;"
+alias -movejump "-jump;-moveup;"
+alias pixel_off "echo Pixels off; gl_texturemode GL_LINEAR_MIPMAP_LINEAR; bind o pixel_on"
+alias pixel_on "echo Pixels on; gl_texturemode GL_NEAREST; bind o pixel_off"
+bind "SPACE" "+jump"
+bind "a" "+moveleft"
+bind "c" "+movedown"
+bind "d" "+moveright"
+bind "s" "+back"
+bind "w" "+forward"
+bind "CTRL" "+movedown"
+bind "MOUSE1" "+attack"
+bind "MOUSE2" "+movejump"
+bind "mwheeldown" "impulse 12"
+bind "mwheelup" "impulse 10"
+bind o pixel_on
+crosshair 1
+fov "105"
+sv_aim 0
+```
+
+You can also add `host_maxfps` to with whatever refresh rate you display supports, for my 144 Hz monitor I use this:
+
+`host_maxfps "144"`
+
+Then in the same folder in `config.cfg` find and replace the following lines (or add them if don't have them):
+
+```
+vid_fsaa "8"
+vid_fullscreen "1"
+vid_height "1080"
+vid_width "1920"
+```
+
+TODO1: how's `host_maxfps` different from `vid_refreshrate` and do both need to be set?
+
+Replace `vid_height` and `vid_width` with your screen resolution values if necessary.
+
+This will give you normal modern FPS controls with mouselook and crosshair. You can also toggle between pixelated and filtered textures by pressing "O" (the letter, not the zero digit) on your keyboard.
 
 ###GOG
 
-TODO0
+TODO1
 
 ###Steam
 
-TODO0
+TODO1
 
 ###Retail
 
-TODO1
+TODO2
 
 ##Command line
 
