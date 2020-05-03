@@ -6,16 +6,19 @@
 2. Download Quakespasm from http://quakespasm.sourceforge.net/download.htm.
 3. Extract Quakespasm archive into a convenient location (mine is in `C:\Games\Quakespasm`).
 4. Create a shortcut to `quakespasm.exe` on your desktop.
-
-![windows-shortcut-properties](screenshots/windows/shortcut-properties.png)
-
 5. Right click the shortcut, open properties, and on the `Shortcut` tab add the following after `quakespasm.exe`:
 * Quake (base game with no expansions): `-basedir "C:\Games\Quake" -fitz`.
 * Scourge of Armagon: `-basedir "C:\Games\Quake" -fitz -hipnotic`.
 * Dissolution of Eternity: `-basedir "C:\Games\Quake" -fitz -rogue`.
 * Dimension of the Past (DOPA): `-basedir "C:\Games\Quake" -fitz -game dopa`.
 
-Replace "C:\Games\Quake" with the path to the folder where you have Quake installed.
+Replace "C:\Games\Quake" with the path to the folder where you have Quake installed. Your `Target` field for the shortcut should look something like this:
+
+![windows-shortcut-properties](screenshots/windows/shortcut-properties.png)
+
+The full text does fit into the window on the screenshot, full value should look something like this:
+
+```C:\Games\Quakespasm\quakespasm-0.93.2_win64\quakespasm.exe -basedir "C:\Games\Quake" -fitz```
 
 6. Go to `id1` subfolder in your Quake directory, and add the following lines to your `autoexec.cfg` (create that file if it doesn't exist):
 
