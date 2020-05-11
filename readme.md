@@ -20,7 +20,15 @@ The full text doesn't fit into the window on the screenshot, full value should l
 
 ```C:\Games\Quakespasm\quakespasm-0.93.2_win64\quakespasm.exe -basedir "C:\Games\Quake" -fitz```
 
-6. Go to `id1` subfolder in your Quake directory, and add the following lines to your `autoexec.cfg` (create that file if it doesn't exist):
+6. Download the config file and put them into the `id1` subfolder in your Quake directory:
+
+* [1920x1080 144Hz](configs/quake/144hz/quake-144hz.zip)
+* [1920x1080 120Hz](configs/quake/120hz/quake-120hz.zip)
+* [1920x1080 60Hz](configs/quake/144hz/quake-60hz.zip)
+
+### Manual config editing
+
+Go to `id1` subfolder in your Quake directory, and add the following lines to your `autoexec.cfg` (create that file if it doesn't exist):
 
 ```
 +mlook
