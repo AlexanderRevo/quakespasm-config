@@ -24,7 +24,7 @@ The full text doesn't fit into the window on the screenshot, full value should l
 
 * [1920x1080 144Hz](configs/quake/144hz/quake-144hz.zip)
 * [1920x1080 120Hz](configs/quake/120hz/quake-120hz.zip)
-* [1920x1080 60Hz](configs/quake/144hz/quake-60hz.zip)
+* [1920x1080 60Hz](configs/quake/60hz/quake-60hz.zip)
 
 ### Manual config editing
 
